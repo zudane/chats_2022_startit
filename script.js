@@ -38,17 +38,17 @@ async function ieladetChataZinasJson()
     
     //console.log(await dati[0]['zina'])
     zinas.innerHTML= '';
-    i=0;
-    while (i < await dati.length)
+    i = 0;
+    while ( i < await dati.length )
     {
         //console.log(i);
-        let laiks = '[<i>' + '???       '+ '</i>]';
-        if ("Laiks" in dati[i]){
-            let laiks = '[<i>' + dati[i]['laiks']+ '</i>]';
+        let laiks = '[<i>' + '????          ' + '</i>] ';
+        if ("laiks" in dati[i]) {
+            laiks = '[<i>' + dati[i]['laiks'] + '</i>] ';
         }
-        zinas.innerHTML = zinas.innerHTML + laiks + dati[i]['vards']+': '+dati[i['zina']+ '<br />';
-        
-        i=i+1;
+        zinas.innerHTML = zinas.innerHTML + laiks + dati[i]['vards']+': '+dati[i]['zina']+'<br />';
+
+        i = i+1;
     }
     zinas.scrollTop = zinas.scrollHeight;
 }//beidzas ieladetChataZinasJson
