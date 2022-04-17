@@ -10,7 +10,7 @@ function sutitZinu()
     zinas.innerHTML = zinas.innerHTML + '<br />' + zina.value;
 
     fetch(API + '/sutit/'+ vards.value +'/' + zina.value)
-    let vards = document.getElementById('vards').value;
+    
     if(vards!=""){
       if(zina.value!=""){
         zinas.innerHTML = zinas.innerHTML+"<br /><b>"+
