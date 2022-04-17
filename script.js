@@ -7,6 +7,8 @@ function sutitZinu()
     console.log('sutitZinu() darbojas');
 
     zinas.innerHTML = zinas.innerHTML + '<br />' + zina.value;
+
+    fetch(API + '/sutit/Laila/' + zina.value)
 }
 
 async function ieladetChataZinas()
