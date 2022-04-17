@@ -41,8 +41,14 @@ async function ieladetChataZinasJson()
     i=0;
     while (i < await dati.length)
     {
-        console.log(i);
-        zinas.innerHTML =zinas.innerHTML+dati[i]['vards']+': '+dati[i['zina']+ '<br />';
+        //console.log(i);
+        if ("Laiks" in dati[i]){
+            let laiks = '[<i>' + dati[i]['laiks']+ '</i>]';
+        }
+        else{
+            let laiks = '[<i>' + '???       '+ '</i>]';
+        }
+        zinas.innerHTML = zinas.innerHTML + laiks + +dati[i]['vards']+': '+dati[i['zina']+ '<br />';
         i=i+1;
     }
     zinas.scrollTop = zinas.scrollHeight;
