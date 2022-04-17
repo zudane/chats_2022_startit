@@ -1,3 +1,4 @@
+const API="https://Chat2022L.lailazudne.repl.co"
 let zina = document.querySelector('.manaZina');
 let zinas = document.querySelector('.chataZinas');
 
