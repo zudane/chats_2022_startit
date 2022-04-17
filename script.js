@@ -32,6 +32,7 @@ async function ieladetChataZinasJson()
         zinas.innerHTML =zinas.innerHTML+dati[i]['vards']+': '+dati[i['zina']+ '<br />';
         i=i+1;
     }
+    zinas.scrollTop = zinas.scrollHeight;
 }//beidzas ieladetChataZinasJson
 
 setInterval( ieladetChataZinasJson, 1000 )
