@@ -1,4 +1,23 @@
 body
 {
+background: url(/Bildes/london_tower.jpg);
+}
+
+.wrapper
+{
 background: aqua;
+width: 500px;
+height: 5000px;
+border: 2px solid rgb(51, 76, 158);
+padding: 10px;
+margin: auto;
+opacity: 0.8;
+}
+.chataZinas
+{
+background: rgb(0, 255, 187);
+height: 300px;
+color: rgb(124, 15, 225);
+padding: 5px;
+overflow-y: scroll;
 }
