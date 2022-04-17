@@ -10,6 +10,19 @@ function sutitZinu()
     zinas.innerHTML = zinas.innerHTML + '<br />' + zina.value;
 
     fetch(API + '/sutit/'+ vards.value +'/' + zina.value)
+    let vards = document.getElementById('vards').value;
+    if(vards!=""){
+      if(zina.value!=""){
+        zinas.innerHTML = zinas.innerHTML+"<br /><b>"+
+                          vards+":</b> "+zina.value;
+        zina.value="";
+      }else{
+        alert("Lūdzu, ieraksti kādu ziņu!");
+      }
+    }else{
+      alert("Lūdzu, ievadi savu vārdu/nikname!");
+    }
+  
 }
 
 async function ieladetChataZinas()
@@ -35,4 +48,5 @@ async function ieladetChataZinasJson()
     zinas.scrollTop = zinas.scrollHeight;
 }//beidzas ieladetChataZinasJson
 
+    
 setInterval( ieladetChataZinasJson, 1000 )
